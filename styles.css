@@ -147,6 +147,23 @@ body {
     background-color: #333;
 }
 
+/* Tertiary button variation: subtle "ghost" button (low emphasis) */
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #D8D6CE;
+    color: #26251e;
+}
+
+.download-button.tertiary:hover {
+    background-color: #e6e5e0;
+    border-color: #D8D6CE;
+}
+
+.download-button.tertiary:active {
+    background-color: #D8D6CE;
+    border-color: #D8D6CE;
+}
+
 /* Outline button variation, available if designers want an alternative style */
 .download-button.outline {
     background-color: transparent;
