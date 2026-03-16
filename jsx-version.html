@@ -57,9 +57,13 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
-                buttonText: 'Download',
-                buttonVariant: 'outline',
+                features: [
+                    'No credit card required',
+                    'Limited Agent requests',
+                    'Limited Tab completions'
+                ],
+                buttonText: 'Start for free',
+                buttonVariant: 'tertiary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -71,20 +75,33 @@
                     'Background Agents',
                     'Maximum context windows',
                 ],
-                buttonText: 'Get Pro',
+                buttonText: 'Start Pro',
                 buttonVariant: 'secondary',
             };
             const organizationPlan = {
                 title: 'Organization',
-                price: '$50/mo.',
+                price: '$30/mo.',
                 includesText: 'Everything in Pro, plus:',
                 features: [
                     'Unlimited Agent requests',
                     'Unlimited Tab completions',
                 ],
-                buttonText: 'Get Organization',
+                buttonText: 'Start Organization',
+                buttonVariant: 'secondary',
+            };
+            const enterprisePlan = {
+                title: 'Enterprise',
+                price: '$50/mo.',
+                includesText: 'Everything in Org, plus:',
+                features: [
+                    'Unlimited Agent requests',
+                    'Unlimited Tab completions',
+                    'Awesomeness',
+                ],
+                buttonText: 'Start Enterprise',
                 buttonVariant: 'primary',
             };
+
             return (
                 // <> is a React Fragment - it groups elements without adding extra HTML divs
                 <>
@@ -95,6 +112,7 @@
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
                         <PricingCard {...organizationPlan} />
+                        <PricingCard {...enterprisePlan} />
                     </div>
                 </>
             );
