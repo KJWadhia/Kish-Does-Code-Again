@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global page metadata, fonts, and shared stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
@@ -10,14 +11,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fixed label showing this is the static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Main pricing layout that holds both plan cards -->
     <div class="cards-container">
+        <!-- Hobby plan card: free entry‑level option -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+                <!-- Price row; this plan is free so only shows label -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                <!-- Features included in the Hobby plan -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +44,21 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary‑style button for the free download action -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro plan card: paid tier with primary emphasis -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+                <!-- Price row with amount and billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                <!-- Extra features that Pro adds on top of Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,6 +81,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary‑style button that highlights the Pro upgrade -->
             <button class="download-button primary">Get Pro</button>
         </div>
     </div>
