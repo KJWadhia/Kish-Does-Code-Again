@@ -1,9 +1,11 @@
+/* Global reset so layouts look consistent across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page background and overall centering of the cards section */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Horizontal layout that holds the individual pricing cards */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Single pricing card shell: background, padding, and vertical stacking */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Top portion of a card that groups title, price, and feature list */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan title styling (Hobby / Pro labels) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row: aligns amount and billing period on a single line */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price amount styling (e.g. Free, $20) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Secondary price text for the billing period (/mo.) */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Container providing spacing below the feature list area */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Small label that introduces the feature list */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Unordered list reset for the features within each plan */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Each feature line with checkmark and text aligned together */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon that visually confirms each included feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Base button styling shared by all call‑to‑action buttons */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,6 +124,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover and active state for the neutral button style */
 .download-button:hover {
     background-color: #D8D6CE;
 }
@@ -117,6 +133,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary button variation used for the Pro plan CTA */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -129,20 +146,25 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
+
+/* Outline button variation, available if designers want an alternative style */
 .download-button.outline {
     background-color: transparent;
     border: 1px solid #111;
     color: #111;
 }
+
 .download-button.outline:hover {
     background-color: #111;
     color: #fff;
 }
+
 .download-button.outline:active {
     background-color: #111;
     color: #fff;
 }
 
+/* Fixed page label at the top center describing this HTML view */
 .page-label {
     position: fixed;
     top: 16px;
@@ -156,6 +178,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasized part of the label (e.g. “HTML version”) */
 .page-label strong {
     color: #333;
 }
